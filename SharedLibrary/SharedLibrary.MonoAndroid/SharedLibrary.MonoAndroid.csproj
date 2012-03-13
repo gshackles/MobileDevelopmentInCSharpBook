@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA140BA9-8FDC-4A4E-A327-EFA331624A25}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SharedLibrary.MonoAndroid</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AssemblyName>SharedLibrary.MonoAndroid</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="..\SharedLibrary\Chapter3\ILocationProvider.cs">
+      <Link>Chapter3\ILocationProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter3\LocationInfo.cs">
+      <Link>Chapter3\LocationInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter3\ParkingSpotTracker.cs">
+      <Link>Chapter3\ParkingSpotTracker.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter3\SpotDetectedNearbyEventArgs.cs">
+      <Link>Chapter3\SpotDetectedNearbyEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter4\MentionEventArgs.cs">
+      <Link>Chapter4\MentionEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter4\Tweet.cs">
+      <Link>Chapter4\Tweet.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter4\TwitterClient.cs">
+      <Link>Chapter4\TwitterClient.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter5\AdoNoteRepository.cs">
+      <Link>Chapter5\AdoNoteRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter5\INoteRepository.cs">
+      <Link>Chapter5\INoteRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter5\Note.cs">
+      <Link>Chapter5\Note.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter5\XmlNoteRepository.cs">
+      <Link>Chapter5\XmlNoteRepository.cs</Link>
+    </Compile>
+  </ItemGroup>
+</Project>

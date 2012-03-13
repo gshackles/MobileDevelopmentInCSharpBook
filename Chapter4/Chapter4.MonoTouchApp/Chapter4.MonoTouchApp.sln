@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter4.MonoTouchApp", "Chapter4.MonoTouchApp.csproj", "{DB945CFA-8300-4227-8E0D-BCEA3196E201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary.MonoTouch", "..\..\SharedLibrary\SharedLibrary.MonoTouch\SharedLibrary.MonoTouch.csproj", "{7A79CFF3-12B3-4A2F-ABAF-D92D466D0E35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A79CFF3-12B3-4A2F-ABAF-D92D466D0E35}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{7A79CFF3-12B3-4A2F-ABAF-D92D466D0E35}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{7A79CFF3-12B3-4A2F-ABAF-D92D466D0E35}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{7A79CFF3-12B3-4A2F-ABAF-D92D466D0E35}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{7A79CFF3-12B3-4A2F-ABAF-D92D466D0E35}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{7A79CFF3-12B3-4A2F-ABAF-D92D466D0E35}.Release|iPhone.Build.0 = Release|Any CPU
+		{7A79CFF3-12B3-4A2F-ABAF-D92D466D0E35}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{7A79CFF3-12B3-4A2F-ABAF-D92D466D0E35}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{DB945CFA-8300-4227-8E0D-BCEA3196E201}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{DB945CFA-8300-4227-8E0D-BCEA3196E201}.Debug|iPhone.Build.0 = Debug|iPhone
+		{DB945CFA-8300-4227-8E0D-BCEA3196E201}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{DB945CFA-8300-4227-8E0D-BCEA3196E201}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{DB945CFA-8300-4227-8E0D-BCEA3196E201}.Release|iPhone.ActiveCfg = Release|iPhone
+		{DB945CFA-8300-4227-8E0D-BCEA3196E201}.Release|iPhone.Build.0 = Release|iPhone
+		{DB945CFA-8300-4227-8E0D-BCEA3196E201}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{DB945CFA-8300-4227-8E0D-BCEA3196E201}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Chapter4.MonoTouchApp.csproj
+	EndGlobalSection
+EndGlobal

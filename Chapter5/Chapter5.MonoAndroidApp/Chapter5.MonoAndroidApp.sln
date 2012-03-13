@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter5.MonoAndroidApp", "Chapter5.MonoAndroidApp.csproj", "{2CFA8625-8ACA-4DAC-A985-741D1C04857F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary.MonoAndroid", "..\..\SharedLibrary\SharedLibrary.MonoAndroid\SharedLibrary.MonoAndroid.csproj", "{FA140BA9-8FDC-4A4E-A327-EFA331624A25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CFA8625-8ACA-4DAC-A985-741D1C04857F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CFA8625-8ACA-4DAC-A985-741D1C04857F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CFA8625-8ACA-4DAC-A985-741D1C04857F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2CFA8625-8ACA-4DAC-A985-741D1C04857F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CFA8625-8ACA-4DAC-A985-741D1C04857F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CFA8625-8ACA-4DAC-A985-741D1C04857F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FA140BA9-8FDC-4A4E-A327-EFA331624A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA140BA9-8FDC-4A4E-A327-EFA331624A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA140BA9-8FDC-4A4E-A327-EFA331624A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA140BA9-8FDC-4A4E-A327-EFA331624A25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

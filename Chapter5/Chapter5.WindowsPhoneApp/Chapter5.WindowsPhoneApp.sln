@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter5.WindowsPhoneApp", "Chapter5.WindowsPhoneApp.csproj", "{849FA540-7069-4C04-9CF7-038D617F32B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary.WindowsPhone", "..\..\SharedLibrary\SharedLibrary.WindowsPhone\SharedLibrary.WindowsPhone.csproj", "{72BF2CEE-C811-404A-BA7E-A24093D8A433}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{849FA540-7069-4C04-9CF7-038D617F32B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{849FA540-7069-4C04-9CF7-038D617F32B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{849FA540-7069-4C04-9CF7-038D617F32B6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{849FA540-7069-4C04-9CF7-038D617F32B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{849FA540-7069-4C04-9CF7-038D617F32B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{849FA540-7069-4C04-9CF7-038D617F32B6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{72BF2CEE-C811-404A-BA7E-A24093D8A433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72BF2CEE-C811-404A-BA7E-A24093D8A433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72BF2CEE-C811-404A-BA7E-A24093D8A433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72BF2CEE-C811-404A-BA7E-A24093D8A433}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

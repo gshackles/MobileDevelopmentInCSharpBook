@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A79CFF3-12B3-4A2F-ABAF-D92D466D0E35}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SharedLibrary.MonoTouch</RootNamespace>
+    <AssemblyName>SharedLibrary.MonoTouch</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;MONOTOUCH</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <DefineConstants>MONOTOUCH</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Mono.Data.Sqlite" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="..\SharedLibrary\Chapter3\ILocationProvider.cs">
+      <Link>Chapter3\ILocationProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter3\LocationInfo.cs">
+      <Link>Chapter3\LocationInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter3\ParkingSpotTracker.cs">
+      <Link>Chapter3\ParkingSpotTracker.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter3\SpotDetectedNearbyEventArgs.cs">
+      <Link>Chapter3\SpotDetectedNearbyEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter4\MentionEventArgs.cs">
+      <Link>Chapter4\MentionEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter4\Tweet.cs">
+      <Link>Chapter4\Tweet.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter4\TwitterClient.cs">
+      <Link>Chapter4\TwitterClient.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter5\AdoNoteRepository.cs">
+      <Link>Chapter5\AdoNoteRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter5\INoteRepository.cs">
+      <Link>Chapter5\INoteRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter5\Note.cs">
+      <Link>Chapter5\Note.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedLibrary\Chapter5\XmlNoteRepository.cs">
+      <Link>Chapter5\XmlNoteRepository.cs</Link>
+    </Compile>
+  </ItemGroup>
+</Project>

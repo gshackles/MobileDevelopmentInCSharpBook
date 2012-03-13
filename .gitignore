@@ -1,0 +1,7 @@
+*.pidb
+*.user
+*.suo
+[Bb]in
+[Oo]bj
+*.userprefs
+*_ReSharper*
