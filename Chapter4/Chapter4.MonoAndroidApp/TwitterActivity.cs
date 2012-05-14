@@ -24,9 +24,9 @@ namespace Chapter4.MonoAndroidApp
                 {
                     var tweetList = FindViewById<ListView>(Resource.Id.Tweets);
                     tweetList.Adapter = new TweetListAdapter(this, tweets);
-                    tweetList.ItemClick += (object sender, ItemEventArgs e) =>
+                    tweetList.ItemClick += (object sender, AdapterView.ItemClickEventArgs args) =>
                     {
-                        var selectedTweet = tweets[e.Position];
+                        var selectedTweet = tweets[args.Position];
 
                         new AlertDialog.Builder(this)
                             .SetTitle("Full Tweet")
