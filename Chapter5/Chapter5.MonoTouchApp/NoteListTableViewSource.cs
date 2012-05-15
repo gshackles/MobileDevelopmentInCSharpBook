@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using SharedLibrary.Chapter5;
 
 namespace Chapter5.MonoTouchApp
 {
