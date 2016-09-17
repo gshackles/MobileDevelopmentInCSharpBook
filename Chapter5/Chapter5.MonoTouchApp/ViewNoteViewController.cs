@@ -1,4 +1,4 @@
-using MonoTouch.UIKit;
+using UIKit;
 using SharedLibrary.Chapter5;
 
 namespace Chapter5.MonoTouchApp
@@ -28,8 +28,8 @@ namespace Chapter5.MonoTouchApp
 	                    			delegate
 				                   	{
 										AppDelegate.NoteRepository.Delete(_note.Id);
-					
-										NavigationController.PopViewControllerAnimated(true);
+
+                                        NavigationController.PopViewController(true);
 									});
 			
 			NavigationItem.RightBarButtonItem = deleteButton;

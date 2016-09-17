@@ -1,4 +1,4 @@
-using MonoTouch.UIKit;
+using UIKit;
 
 namespace Chapter5.MonoTouchApp
 {
@@ -36,7 +36,7 @@ namespace Chapter5.MonoTouchApp
 				AppDelegate.NoteRepository.Add(
 					NoteTitle.Text, NoteContents.Text);
 				
-				NavigationController.PopViewControllerAnimated(true);
+				NavigationController.PopViewController(true);
 			};
 		}
 	}

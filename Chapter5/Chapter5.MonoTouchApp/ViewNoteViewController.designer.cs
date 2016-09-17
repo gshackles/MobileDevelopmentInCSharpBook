@@ -4,7 +4,7 @@
 // actions made in the Xcode designer. If it is removed, they will be lost.
 // Manual changes to this file may not be handled correctly.
 //
-using MonoTouch.Foundation;
+using Foundation;
 
 namespace Chapter5.MonoTouchApp
 {
@@ -12,9 +12,9 @@ namespace Chapter5.MonoTouchApp
 	partial class ViewNoteViewController
 	{
 		[Outlet]
-		MonoTouch.UIKit.UILabel NoteContents { get; set; }
+		UIKit.UILabel NoteContents { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UILabel NoteTitle { get; set; }
+		UIKit.UILabel NoteTitle { get; set; }
 	}
 }

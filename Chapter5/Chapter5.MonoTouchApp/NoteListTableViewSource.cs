@@ -1,6 +1,7 @@
+using System;
 using System.Collections.Generic;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 using SharedLibrary.Chapter5;
 
 namespace Chapter5.MonoTouchApp
@@ -17,12 +18,12 @@ namespace Chapter5.MonoTouchApp
 			_notes = notes;
 		}
 		
-		public override int RowsInSection(UITableView tableview, int section)
+		public override nint RowsInSection(UITableView tableview, nint section)
 		{
 			return _notes.Count;
 		}
 		
-		public override float GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
+		public override nfloat GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
 		{
 			return 60;
 		}
