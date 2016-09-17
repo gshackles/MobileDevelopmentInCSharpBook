@@ -1,6 +1,6 @@
-using MonoTouch.CoreLocation;
-using MonoTouch.MapKit;
-using MonoTouch.UIKit;
+using CoreLocation;
+using MapKit;
+using UIKit;
 
 namespace Chapter6.MonoTouchApp
 {

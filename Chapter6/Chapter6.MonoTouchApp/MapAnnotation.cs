@@ -1,5 +1,5 @@
-using MonoTouch.CoreLocation;
-using MonoTouch.MapKit;
+using CoreLocation;
+using MapKit;
 
 namespace Chapter6.MonoTouchApp
 {
@@ -13,11 +13,17 @@ namespace Chapter6.MonoTouchApp
 			_title = title;
 			_coordinate = coordinate;
 		}
+
+        public override void SetCoordinate(CLLocationCoordinate2D value)
+        {
+            base.SetCoordinate(value);
+
+            _coordinate = value;
+        }
 		
 		public override CLLocationCoordinate2D Coordinate 
 		{
 			get { return _coordinate; }
-			set { _coordinate = value; }
 		}
 		
 		public override string Title 

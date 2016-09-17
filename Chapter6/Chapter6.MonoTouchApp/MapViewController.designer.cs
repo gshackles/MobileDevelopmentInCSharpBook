@@ -4,7 +4,7 @@
 // actions made in the Xcode designer. If it is removed, they will be lost.
 // Manual changes to this file may not be handled correctly.
 //
-using MonoTouch.Foundation;
+using Foundation;
 
 namespace Chapter6.MonoTouchApp
 {
@@ -12,6 +12,6 @@ namespace Chapter6.MonoTouchApp
 	partial class MapViewController
 	{
 		[Outlet]
-		MonoTouch.MapKit.MKMapView Map { get; set; }
+		MapKit.MKMapView Map { get; set; }
 	}
 }
