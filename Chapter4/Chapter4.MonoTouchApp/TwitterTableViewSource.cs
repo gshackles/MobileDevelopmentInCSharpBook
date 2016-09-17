@@ -1,6 +1,7 @@
+using System;
 using System.Collections.Generic;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 using SharedLibrary.Chapter4;
 
 namespace Chapter4.MonoTouchApp
@@ -15,12 +16,12 @@ namespace Chapter4.MonoTouchApp
 			_tweets = tweets;
 		}
 
-		public override int RowsInSection(UITableView tableView, int section)
+		public override nint RowsInSection(UITableView tableView, nint section)
 		{
 			return _tweets.Count;
 		}
 		
-		public override float GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
+		public override nfloat GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
 		{
 			return 60;
 		}

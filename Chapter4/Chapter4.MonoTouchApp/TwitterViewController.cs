@@ -1,4 +1,4 @@
-using MonoTouch.UIKit;
+using UIKit;
 using SharedLibrary.Chapter4;
 
 namespace Chapter4.MonoTouchApp
@@ -17,7 +17,7 @@ namespace Chapter4.MonoTouchApp
 			loading.Show();
 			
 			var indicator = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.WhiteLarge);
-			indicator.Center = new System.Drawing.PointF(loading.Bounds.Width / 2, loading.Bounds.Size.Height - 40);
+            indicator.Center = new CoreGraphics.CGPoint(loading.Bounds.Width / 2, loading.Bounds.Size.Height - 40);
 			indicator.StartAnimating();
 			loading.AddSubview (indicator);
 			
