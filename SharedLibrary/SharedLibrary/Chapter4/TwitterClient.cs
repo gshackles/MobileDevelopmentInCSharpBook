@@ -9,7 +9,7 @@ namespace SharedLibrary.Chapter4
 {
 	public class TwitterClient
 	{
-		private const string _baseUrl = "https://api.twitter.com/1/statuses/";
+		private const string _baseUrl = "https://mobiledevelopmentwithcs.blob.core.windows.net/twitter/";
 
 		public event EventHandler<MentionEventArgs> MentionReceived;
 	
